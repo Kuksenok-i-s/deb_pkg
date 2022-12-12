@@ -28,7 +28,7 @@ if [ -v USER_ID ] && [ -v GROUP_ID ] ; then
 else
        echo "cant found group_id or user_id variables default file permission to 777"
        echo "!!!WARNING!!!"
-       echo "This is not recommended, please add this into docker run cmd \" -e USER_ID=\$(id -u) -e GROUP_ID=\$(id -g) \""
+       echo "This is not recommended, please add this into docker run cmd \" -e USER_ID=\$(id $(whoami) -u) -e GROUP_ID=\$(id $(whoami) -g) \""
        echo "setting file permissions with \"chmod -R 0777 /local/builds\"" 
        chmod -R 0777 /local/builds
 fi
