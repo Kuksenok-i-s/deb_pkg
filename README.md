@@ -24,7 +24,7 @@ Successfully built eff120ceb07f
 Successfully tagged build_hello_world:latest
 ```
 Just want to mention this a demonstrative repository for integration into Gitlab CI or anything similar Dockerfile must be changed
-to support [build_args|https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables---build-arg]
+to support [build_args](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables---build-arg)
 
 ## 
 ```bash
